@@ -14,4 +14,4 @@ BOUNDING BOX and NON MAXIMA SUPPRESSION:
 The sliding window and the images which we trained our model is of fixed size 64 x 128, but a human can appear at variuos scaled in an image depending on the distance of the object from the lens. Hence a scale space image pyramid is constructed and sliding window is passed across each image in the scale space. Whenever a true positive is detected, we record the coordinates of bounding box but a single human can lead to multiple true positives, multiple bounding boxes at variuos scales. In order to avoid this Non Maxima Suppression of bounding boxes that oveerlap by a certain percentage are considered redundant and one among these are chose based on scores.
 
 MODEL FLOW CHART:
-
+![](HOG model.jpg)
